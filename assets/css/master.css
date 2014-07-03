@@ -10,7 +10,7 @@
 html, body {
 	width: 100vw;
 	height: 100vh;
-	background-color: rgb(252,251,227);
+	background-color: #FDFDFD;
 }
 body {
 	font-family: 'Roboto';
