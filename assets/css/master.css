@@ -1,0 +1,67 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,900);
+
+/* palette (rgb)
+	red: 218,40,56
+	white: 255,255,255
+	old grey pants: 153,140,133
+	blue: 4,166,188
+	brown: 209,188,170
+*/
+html, body {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(252,251,227);
+}
+body {
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: black;
+}
+.background img {
+	width: 120vw;
+	height: 100vh;
+	position: absolute;
+}
+
+.hexagon {
+  position: relative;
+  width: 150px; 
+  height: 86.60px;
+  background-color: rgb(218,40,56);
+  margin-bottom: 100px;
+}
+.hexagon:nth-child(1){
+	margin-left: 35vw;
+}
+.hexagon:nth-child(2){
+	margin-left: 45vw;
+}
+.hexagon:nth-child(3){
+	margin-left: 35vw;
+}
+.hexagon:nth-child(4){
+	margin-left: 45vw;
+}
+i {
+	font-size: 80px;
+	color: white;
+}
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 43.30px solid rgb(218,40,56);
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 43.30px solid rgb(218,40,56);
+}
