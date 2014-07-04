@@ -4,6 +4,7 @@ $pants: rgb(153,140,133);
 $blue: rgb(4,166,188);
 $brown: rgb(209,188,170);
 $transblue: rgba(4, 166, 188, 0.8);
+$transbeige: rgba(249, 242, 231, 0.8);
 $white: #fff;
 $beige: #F9F2E7;
 
@@ -17,8 +18,8 @@ $beige: #F9F2E7;
     clear: both;
 }
 
-@mixin transition($time: 0.2s, $what: all) {
-	transition: $what $time ease-in;
+@mixin transition($time: 0.2s, $what: all, $how: ease-in) {
+	transition: $what $time $how;
 }
 
 /* GENERAL STYLING */
@@ -61,8 +62,9 @@ body {
 
 	h2 {
 		font-weight: 700;
-		//text-transform: uppercase;
-		font-size: 2em;
+		text-transform: uppercase;
+		font-size: 1.4em;
+		letter-spacing: 7px;
 	}
 }
 
@@ -76,14 +78,15 @@ body {
 
 	.infobox {
 		background-color: desaturate($transblue, 35%);
-		padding: 1em 7em 1em 1em;
+		padding: 1em 100px 1em 1em;
 		font-size: 1.2em;
+		border-bottom: 3px solid desaturate(darken($transblue, 10%), 20%);
 		margin: 0;
 		color: $white;
 	}
 
 	.free-quote {
-		margin-top: 12px;
+		margin-top: 14px;
 		text-align: right;
 		font-size: 1.2em;
 		text-transform: uppercase;
@@ -92,13 +95,17 @@ body {
 
 		a {
 			color: $white;
-			padding: 14px 7em 14px 14px;
+			padding: 14px 170px 14px 25px;
 			text-align: right;
-			background-color: desaturate(darken($transblue, 10%), 25%);
+			background-color: desaturate(darken($transbeige, 35%), 0%);
+			@include transition(0.1s);
 
 			&:hover {
-				background-color: desaturate(darken($transblue, 15%), 25%);
+				background-color: desaturate(darken($transbeige, 40%), 0%);
 				text-decoration: none;
+				padding-left: 40px;
+				padding-right: 190px;
+				@include transition(0.2s, all, ease-in);
 			}
 		}
 	}
