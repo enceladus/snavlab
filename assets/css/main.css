@@ -25,7 +25,7 @@ body {
   margin: 2.5em auto;
   width: 70%;
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #ccc; }
+  border: 1px solid #eee; }
   .logo h1 {
     font-weight: 100;
     font-size: 4.5em;
@@ -68,3 +68,44 @@ body {
 .process {
   background-color: #f9f2e7;
   border-top: 4px solid #d1bcaa; }
+
+/* HEXAGON */
+.hexcontainer {
+  padding: 2em 0; }
+
+.hexagon {
+  position: relative;
+  text-align: center;
+  display: block;
+  width: 150px;
+  height: 86.6px;
+  background-color: #da2838; }
+  .hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent; }
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 43.3px solid #da2838; }
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 43.3px solid #da2838; }
+  .hexagon .fa {
+    font-size: 4em;
+    padding-top: 15px;
+    color: white; }
+
+a.hexagon {
+  transition: margin-left 0.2s ease-in; }
+
+a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
+  background-color: #9b1b26;
+  margin-left: 15px;
+  transition: margin-left 0.2s ease-in; }
+  a.hexagon:hover:before, a.hexagon:hover:before, a.hexagon:hover:before {
+    border-bottom-color: #9b1b26; }
+  a.hexagon:hover:after, a.hexagon:hover:after, a.hexagon:hover:after {
+    border-top-color: #9b1b26; }

@@ -17,6 +17,10 @@ $beige: #F9F2E7;
     clear: both;
 }
 
+@mixin transition($time: 0.2s, $what: all) {
+	transition: $what $time ease-in;
+}
+
 /* GENERAL STYLING */
 body {
 	font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -36,7 +40,7 @@ body {
 	margin: 2.5em auto;
 	width: 70%;
 	background-color: rgba(255,255,255,0.8);
-	border: 1px solid #ccc;
+	border: 1px solid #eee;
 
 	h1 {
 		font-weight: 100;
@@ -95,4 +99,64 @@ body {
 .process {
 	background-color: $beige;
 	border-top: 4px solid $brown;
+}
+
+/* HEXAGON */
+.hexcontainer {
+	padding: 2em 0;
+}
+
+$hexwidth: 150px;
+
+
+.hexagon {
+	position: relative;
+	text-align: center;
+	display: block;
+	width: $hexwidth;
+	height: $hexwidth * 0.577333333;
+	background-color: $red;
+
+	&:before, &:after {
+		content: "";
+  		position: absolute;
+		width: 0;
+		border-left: ($hexwidth / 2) solid transparent;
+		border-right: ($hexwidth / 2) solid transparent;
+	}
+
+	&:before {
+		bottom: 100%;
+		border-bottom: ($hexwidth * 0.577333333 / 2) solid $red;
+	}
+
+	&:after {
+		top: 100%;
+		width: 0;
+		border-top: ($hexwidth * 0.577333333 / 2) solid $red;
+	}
+
+	.fa {
+		font-size: 4em;
+		padding-top: 15px;
+		color: white;
+	}
+}
+
+a.hexagon {
+	@include transition(0.2s, margin-left);
+}
+
+a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
+	background-color: darken($red, 15%);
+	margin-left: 15px;
+	@include transition(0.2s, margin-left);
+
+	&:before {
+		border-bottom-color: darken($red, 15%);
+	}
+
+	&:after {
+		border-top-color: darken($red, 15%);
+	}
 }
