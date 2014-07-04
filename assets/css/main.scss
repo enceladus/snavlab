@@ -73,7 +73,8 @@ body {
 }
 
 .heading {
-	padding-bottom: 2em;
+	padding-top: 5em;
+	padding-bottom: 8em;
 
 	.cta {
 		float: right;
@@ -119,10 +120,20 @@ body {
 
 /*** process ***/
 .process {
+	padding-bottom: 5em;
 	background-color: $beige;
 	border-top: 4px solid $brown;
 }
-
+.explanation:nth-child(odd){
+	text-align: right;
+}
+.explanation:nth-child(even){
+	text-align: left;
+	margin-left: -50px;
+}
+.hexandtext {
+	margin-left: -30px;
+}
 /*** work ***/
 .work {
 	text-align: center;
