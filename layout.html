@@ -14,6 +14,11 @@
 	<![endif]-->
 </head>
 <body>
+	<div class='background'>
+		<img src="media/backdrop.svg" alt="">
+		<img src="media/backdrop2.svg" alt="">
+		<img src="media/backdrop3.svg" alt="">
+	</div>
 	<section class="heading cf">
 		<div class="container">
 			<div class="row">
@@ -123,5 +128,20 @@
 			<div class="col-md-2 hexcontainer email"><a href="" class="hexagon"></a></div>
 		</div>
 	</div>
+	<script>
+	$(document).ready(function(){
+		$(window).scroll(function () { 
+		   $('.background img:nth-child(1)').css({
+		      'top' : -($(this).scrollTop()/4)+"px"
+		   });
+		   $('.background img:nth-child(2)').css({
+		      'top' : -($(this).scrollTop()/2)+"px"
+		   }); 
+		   $('.background img:nth-child(3)').css({
+		      'top' : -($(this).scrollTop()/3)+"px"
+		   }); 
+		});
+	});
+	</script>
 </body>
 </html>
