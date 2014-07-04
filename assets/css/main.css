@@ -34,7 +34,9 @@ body {
     letter-spacing: 20px; }
   .logo h2 {
     font-weight: 700;
-    font-size: 2em; }
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: 7px; }
 
 .heading {
   background: url("../../media/backdrop.svg");
@@ -44,12 +46,13 @@ body {
     width: 45%; }
   .heading .infobox {
     background-color: rgba(38, 140, 154, 0.8);
-    padding: 1em 7em 1em 1em;
+    padding: 1em 100px 1em 1em;
     font-size: 1.2em;
+    border-bottom: 3px solid rgba(17, 111, 124, 0.8);
     margin: 0;
     color: white; }
   .heading .free-quote {
-    margin-top: 12px;
+    margin-top: 14px;
     text-align: right;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -57,12 +60,16 @@ body {
     font-weight: 100; }
     .heading .free-quote a {
       color: white;
-      padding: 14px 7em 14px 14px;
+      padding: 14px 170px 14px 25px;
       text-align: right;
-      background-color: rgba(21, 108, 120, 0.8); }
+      background-color: rgba(213, 165, 88, 0.8);
+      transition: all 0.1s ease-in; }
       .heading .free-quote a:hover {
-        background-color: rgba(17, 89, 99, 0.8);
-        text-decoration: none; }
+        background-color: rgba(208, 154, 68, 0.8);
+        text-decoration: none;
+        padding-left: 40px;
+        padding-right: 190px;
+        transition: all 0.2s ease-in; }
 
 .process {
   background-color: #f9f2e7;
