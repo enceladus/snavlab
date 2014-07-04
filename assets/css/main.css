@@ -50,7 +50,8 @@ body {
     letter-spacing: 7px; }
 
 .heading {
-  padding-bottom: 2em; }
+  padding-top: 5em;
+  padding-bottom: 8em; }
   .heading .cta {
     float: right;
     width: 45%; }
@@ -84,8 +85,19 @@ body {
 /* SECTIONS */
 /*** process ***/
 .process {
+  padding-bottom: 5em;
   background-color: #f9f2e7;
   border-top: 4px solid #d1bcaa; }
+
+.explanation:nth-child(odd) {
+  text-align: right; }
+
+.explanation:nth-child(even) {
+  text-align: left;
+  margin-left: -50px; }
+
+.hexandtext {
+  margin-left: -30px; }
 
 /*** work ***/
 .work {
