@@ -5,6 +5,7 @@ $blue: rgb(4,166,188);
 $brown: rgb(209,188,170);
 $transblue: rgba(4, 166, 188, 0.8);
 $white: #fff;
+$beige: #F9F2E7;
 
 /* HELPERS */
 .cf:before,
@@ -19,6 +20,13 @@ $white: #fff;
 /* GENERAL STYLING */
 body {
 	font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+.section-heading {
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 1em 0;
 }
 
 /* HEADER */
@@ -47,6 +55,7 @@ body {
 
 .heading {
 	background: url('../../media/backdrop.svg');
+	padding-bottom: 2em;
 
 	.cta {
 		float: right;
@@ -81,4 +90,9 @@ body {
 			}
 		}
 	}
+}
+
+.process {
+	background-color: $beige;
+	border-top: 4px solid $brown;
 }

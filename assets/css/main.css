@@ -12,6 +12,12 @@
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif; }
 
+.section-heading {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1em 0; }
+
 /* HEADER */
 .logo {
   text-align: center;
@@ -32,7 +38,8 @@ body {
     font-size: 2em; }
 
 .heading {
-  background: url("../../media/backdrop.svg"); }
+  background: url("../../media/backdrop.svg");
+  padding-bottom: 2em; }
   .heading .cta {
     float: right;
     width: 45%; }
@@ -57,3 +64,7 @@ body {
       .heading .free-quote a:hover {
         background-color: rgba(17, 89, 99, 0.8);
         text-decoration: none; }
+
+.process {
+  background-color: #f9f2e7;
+  border-top: 4px solid #d1bcaa; }
