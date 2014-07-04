@@ -54,7 +54,7 @@ body {
 	padding: 1em;
 	margin: 2.5em auto;
 	width: 100%;
-	background-color: rgba(0,0,0,0.08);
+	background-color: rgba(220,220,220,0.4);
 
 	h1 {
 		font-weight: 100;
@@ -171,6 +171,16 @@ body {
 /*** about ***/
 
 /*** contact ***/
+.contact {
+	background-color: $beige;
+	border-top: 4px solid $brown;
+	padding-bottom: 3em;
+
+	.info {
+		padding-top: 1em;
+		font-size: 1.3em;
+	}
+}
 
 /* HEXAGON */
 .hexcontainer {
