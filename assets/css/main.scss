@@ -5,6 +5,7 @@ $blue: rgb(4,166,188);
 $brown: rgb(209,188,170);
 $transblue: rgba(4, 166, 188, 0.8);
 $transbeige: rgba(249, 242, 231, 0.8);
+$midnight: #2c3e50;
 $white: #fff;
 $beige: #F9F2E7;
 
@@ -16,6 +17,10 @@ $beige: #F9F2E7;
 }
 .cf:after {
     clear: both;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 @mixin transition($time: 0.2s, $what: all, $how: ease-in) {
@@ -110,10 +115,62 @@ body {
 	}
 }
 
+/* SECTIONS */
+
+/*** process ***/
 .process {
 	background-color: $beige;
 	border-top: 4px solid $brown;
 }
+
+/*** work ***/
+.work {
+	text-align: center;
+	background-color: $midnight;
+	color: $white;
+
+	img.portfolio {
+		width: 100%;
+		height: auto;
+		border: 2px solid #fff;
+		-webkit-filter: saturate(15%);
+		@include transition();
+
+		&:hover {
+			-webkit-filter: saturate(110%);
+			@include transition();
+		}
+	}
+
+	.work-title {
+		text-transform: uppercase;
+		font-weight: 100;
+		font-size: 2.4em;
+		letter-spacing: 7px;
+	}
+
+	a.btn {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+		display: block;
+		margin: 1em auto 3em;
+		padding: 10px;
+		width: 100px;
+		text-transform: uppercase;
+		font-weight: 300;
+		background-color: $blue;
+		border: none;
+
+		&:hover {
+			background-color: darken($blue, 5%);
+		}
+	}
+}
+
+/*** about ***/
+
+/*** contact ***/
 
 /* HEXAGON */
 .hexcontainer {
@@ -121,7 +178,6 @@ body {
 }
 
 $hexwidth: 150px;
-
 
 .hexagon {
 	position: relative;

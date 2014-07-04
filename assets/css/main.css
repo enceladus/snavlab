@@ -8,6 +8,9 @@
 .cf:after {
   clear: both; }
 
+* {
+  box-sizing: border-box; }
+
 /* GENERAL STYLING */
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
@@ -78,10 +81,48 @@ body {
         padding-right: 190px;
         transition: all 0.2s ease-in; }
 
+/* SECTIONS */
+/*** process ***/
 .process {
   background-color: #f9f2e7;
   border-top: 4px solid #d1bcaa; }
 
+/*** work ***/
+.work {
+  text-align: center;
+  background-color: #2c3e50;
+  color: white; }
+  .work img.portfolio {
+    width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    -webkit-filter: saturate(15%);
+    transition: all 0.2s ease-in; }
+    .work img.portfolio:hover {
+      -webkit-filter: saturate(110%);
+      transition: all 0.2s ease-in; }
+  .work .work-title {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 2.4em;
+    letter-spacing: 7px; }
+  .work a.btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    display: block;
+    margin: 1em auto 3em;
+    padding: 10px;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: 300;
+    background-color: #04a6bc;
+    border: none; }
+    .work a.btn:hover {
+      background-color: #0390a3; }
+
+/*** about ***/
+/*** contact ***/
 /* HEXAGON */
 .hexcontainer {
   padding: 2em 0; }
