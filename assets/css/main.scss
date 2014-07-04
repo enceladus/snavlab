@@ -240,3 +240,20 @@ a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
 		border-top-color: darken($red, 15%);
 	}
 }
+
+/* WORK SECTION */
+.work {
+	text-align: center;
+}
+
+.work img.portfolio {
+	width: 100%;
+	height: auto;
+}
+
+/* ABOUT SECTION */
+.team img {
+	height: 300px;
+	width: auto;
+	overflow: hidden;
+}

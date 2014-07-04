@@ -171,3 +171,17 @@ a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
     border-bottom-color: #9b1b26; }
   a.hexagon:hover:after, a.hexagon:hover:after, a.hexagon:hover:after {
     border-top-color: #9b1b26; }
+
+/* WORK SECTION */
+.work {
+  text-align: center; }
+
+.work img.portfolio {
+  width: 100%;
+  height: auto; }
+
+/* ABOUT SECTION */
+.team img {
+  height: 300px;
+  width: auto;
+  overflow: hidden; }
