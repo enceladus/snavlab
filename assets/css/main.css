@@ -130,3 +130,9 @@ a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
 .work img.portfolio {
   width: 100%;
   height: auto; }
+
+/* ABOUT SECTION */
+.team img {
+  height: 300px;
+  width: auto;
+  overflow: hidden; }

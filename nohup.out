@@ -90,3 +90,17 @@
       write assets/css/main.css
 >>> Change detected to: assets/css/main.scss
       write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      error assets/css/main.scss (Line 192: Invalid CSS after "	overflow": expected ";", was ": hidden;")
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
