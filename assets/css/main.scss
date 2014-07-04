@@ -52,7 +52,7 @@ body {
 
 	h2 {
 		font-weight: 700;
-		text-transform: uppercase;
+		//text-transform: uppercase;
 		font-size: 2em;
 	}
 }
@@ -159,4 +159,14 @@ a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
 	&:after {
 		border-top-color: darken($red, 15%);
 	}
+}
+
+/* WORK SECTION */
+.work {
+	text-align: center;
+}
+
+.work img.portfolio {
+	width: 100%;
+	height: auto;
 }

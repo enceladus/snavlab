@@ -34,7 +34,6 @@ body {
     letter-spacing: 20px; }
   .logo h2 {
     font-weight: 700;
-    text-transform: uppercase;
     font-size: 2em; }
 
 .heading {
@@ -109,3 +108,11 @@ a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
     border-bottom-color: #9b1b26; }
   a.hexagon:hover:after, a.hexagon:hover:after, a.hexagon:hover:after {
     border-top-color: #9b1b26; }
+
+/* WORK SECTION */
+.work {
+  text-align: center; }
+
+.work img.portfolio {
+  width: 100%;
+  height: auto; }

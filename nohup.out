@@ -1,0 +1,11 @@
+[Listen warning]:
+  Listen will be polling for changes. Learn more at https://github.com/guard/listen#polling-fallback.
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
