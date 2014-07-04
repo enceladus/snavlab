@@ -1,0 +1,84 @@
+/* COLOR SCHEME */
+$red: rgb(218,40,56);
+$pants: rgb(153,140,133);
+$blue: rgb(4,166,188);
+$brown: rgb(209,188,170);
+$transblue: rgba(4, 166, 188, 0.8);
+$white: #fff;
+
+/* HELPERS */
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+/* GENERAL STYLING */
+body {
+	font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+/* HEADER */
+.logo {
+	text-align: center;
+	padding: 1em;
+	margin: 2.5em auto;
+	width: 70%;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid #ccc;
+
+	h1 {
+		font-weight: 100;
+		font-size: 4.5em;
+		margin: 0;
+		padding: 0;
+		letter-spacing: 20px;
+	}
+
+	h2 {
+		font-weight: 700;
+		text-transform: uppercase;
+		font-size: 2em;
+	}
+}
+
+.heading {
+	background: url('../../media/backdrop.svg');
+
+	.cta {
+		float: right;
+		width: 45%;
+	}
+
+	.infobox {
+		background-color: desaturate($transblue, 35%);
+		padding: 1em 7em 1em 1em;
+		font-size: 1.2em;
+		margin: 0;
+		color: $white;
+	}
+
+	.free-quote {
+		margin-top: 12px;
+		text-align: right;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		font-style: italic;
+		font-weight: 100;
+
+		a {
+			color: $white;
+			padding: 14px 7em 14px 14px;
+			text-align: right;
+			background-color: desaturate(darken($transblue, 10%), 25%);
+
+			&:hover {
+				background-color: desaturate(darken($transblue, 15%), 25%);
+				text-decoration: none;
+			}
+		}
+	}
+}

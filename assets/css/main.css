@@ -1,0 +1,59 @@
+/* COLOR SCHEME */
+/* HELPERS */
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+/* GENERAL STYLING */
+body {
+  font-family: "Roboto", "Helvetica Neue", sans-serif; }
+
+/* HEADER */
+.logo {
+  text-align: center;
+  padding: 1em;
+  margin: 2.5em auto;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc; }
+  .logo h1 {
+    font-weight: 100;
+    font-size: 4.5em;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 20px; }
+  .logo h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em; }
+
+.heading {
+  background: url("../../media/backdrop.svg"); }
+  .heading .cta {
+    float: right;
+    width: 45%; }
+  .heading .infobox {
+    background-color: rgba(38, 140, 154, 0.8);
+    padding: 1em 7em 1em 1em;
+    font-size: 1.2em;
+    margin: 0;
+    color: white; }
+  .heading .free-quote {
+    margin-top: 12px;
+    text-align: right;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 100; }
+    .heading .free-quote a {
+      color: white;
+      padding: 14px 7em 14px 14px;
+      text-align: right;
+      background-color: rgba(21, 108, 120, 0.8); }
+      .heading .free-quote a:hover {
+        background-color: rgba(17, 89, 99, 0.8);
+        text-decoration: none; }
