@@ -53,3 +53,40 @@
       write assets/css/main.css
 >>> Change detected to: assets/css/main.scss
       write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      error assets/css/main.scss (Line 52: Alpha channel 7 must be between 0 and 1 for `rgba')
+>>> Change detected to: assets/css/main.scss
+      error assets/css/main.scss (Line 52: Alpha channel 7 must be between 0 and 1 for `rgba')
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      error assets/css/main.scss (Line 50: Invalid CSS after "	padding": expected ";", was ": 1em;")
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
+>>> Change detected to: assets/css/main.scss
+      write assets/css/main.css
