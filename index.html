@@ -22,6 +22,8 @@
 <body>
 	<div class='background'>
 		<img src='media/backdrop.svg'>
+		<img src='media/backdrop2.svg'>
+		<img src='media/backdrop3.svg'>
 	</div>
 	<div class='row'>
 		<div class='col-lg-12'>
@@ -52,8 +54,14 @@
 	<script>
 	$(document).ready(function(){
 		$(window).scroll(function () { 
-		   $('.background img').css({
+		   $('.background img:nth-child(1)').css({
 		      'top' : -($(this).scrollTop()/4)+"px"
+		   });
+		   $('.background img:nth-child(2)').css({
+		      'top' : -($(this).scrollTop()/2)+"px"
+		   }); 
+		   $('.background img:nth-child(3)').css({
+		      'top' : -($(this).scrollTop()/3)+"px"
 		   }); 
 		});
 	});
