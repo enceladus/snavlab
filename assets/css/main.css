@@ -14,7 +14,8 @@
 /* GENERAL STYLING */
 body {
   font-family: "Roboto", "Helvetica Neue", sans-serif;
-  background-color: #FAFAFA; }
+  background-color: #FAFAFA;
+  background-image: url("../../media/texture.png"); }
 
 .background img {
   position: absolute;
@@ -36,7 +37,7 @@ body {
   padding: 1em;
   margin: 2.5em auto;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.08); }
+  background-color: rgba(255, 255, 255, 0.7); }
   .logo h1 {
     font-weight: 100;
     font-size: 4.5em;
@@ -89,6 +90,11 @@ body {
   background-color: #f9f2e7;
   border-top: 4px solid #d1bcaa; }
 
+.about {
+  text-align: center;
+  margin-bottom: 20px;
+  color: grey; }
+
 .explanation:nth-child(odd) {
   text-align: right; }
 
@@ -134,6 +140,11 @@ body {
       background-color: #0390a3; }
 
 /*** about ***/
+.team img {
+  height: 300px;
+  width: auto;
+  overflow: hidden; }
+
 /*** contact ***/
 /* HEXAGON */
 .hexcontainer {
@@ -167,6 +178,9 @@ body {
 a.hexagon {
   transition: margin-left 0.2s ease-in; }
 
+.hexagon .cf .email {
+  text-align: center; }
+
 a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
   background-color: #9b1b26;
   margin-left: 15px;
@@ -176,16 +190,49 @@ a.hexagon:hover, a.hexagon:hover, a.hexagon:hover {
   a.hexagon:hover:after, a.hexagon:hover:after, a.hexagon:hover:after {
     border-top-color: #9b1b26; }
 
-/* WORK SECTION */
-.work {
-  text-align: center; }
+/* responsiveness */
+@media (max-width: 1200px) {
+  .hexcontainer {
+    margin-left: 0 !important;
+    width: 25%; }
 
-.work img.portfolio {
-  width: 100%;
-  height: auto; }
+  .explanation {
+    text-align: left !important;
+    margin-left: 0 !important;
+    width: 70%; }
+    .explanation h1 {
+      font-size: 1.4em;
+      font-weight: 700; }
 
-/* ABOUT SECTION */
-.team img {
-  height: 300px;
-  width: auto;
-  overflow: hidden; }
+  .hexandtext {
+    margin: 0 auto; }
+    .hexandtext .row {
+      text-align: center;
+      margin: 0 auto; } }
+@media (max-width: 1110px) {
+  .heading .cta {
+    width: 70%; } }
+@media (max-width: 900px) {
+  .hexagon, .hexagon:before, .hexagon:after {
+    border: none; } }
+@media (max-width: 700px) {
+  .heading .cta {
+    width: 100%; }
+    .heading .cta .infobox, .heading .cta .free-quote {
+      width: 100%; }
+    .heading .cta .free-quote a, .heading .cta .free-quote a:hover {
+      width: 100%;
+      padding: 14px; } }
+@media (max-width: 600px) {
+  .hexagon, .hexagon:before, .hexagon:after {
+    width: auto;
+    background-color: transparent; }
+  .hexagon .fa {
+    font-size: 2em;
+    color: #da2838; }
+
+  .hexcontainer {
+    width: 15%; }
+
+  .explanation {
+    width: 80%; } }
