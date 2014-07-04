@@ -20,33 +20,43 @@
 	-->
 </head>
 <body>
-	<div class='master-container'>
-		<div class="logo">
-			<img src="media/logo.png">
-		</div>
-		<div class='background'>
-			<img src='media/backdrop.svg'>
-		</div>
-		<div class='row'>
-			<div class='col-lg-12'>Banner</div>
-		</div>
-		<div class='row'>
-			<div class='col-lg-12'>About</div>
-		</div>
-		<div class='row'>
-			<!-- <div class='col-lg-12'>
-				<div class='idea'><i class='fa fa-flask'></i><div class='hexagon'></div></div>
-				<div class='design'><i class='fa fa-text-height'></i><div class='hexagon'></div></div>
-				<div class='development'><i class='fa fa-cubes'></i><div class='hexagon'></div></div>
-				<div class='deployment'><i class='fa fa-rocket'></i><div class='hexagon'></div></div>
-			</div> -->
-		</div>
-		<div class='row'>
-			<div class='col-lg-12'>Team</div>
-		</div>
-		<div class='row'>
-			<div class='col-lg-12'>Contact</div>
+	<div class='background'>
+		<img src='media/backdrop.svg'>
+	</div>
+	<div class='row'>
+		<div class='col-lg-12'>
+			<div class="logo">
+				<img src="media/logo.svg">
+				<p>snavlab</p>
+				<p class='tagline'>fast &amp; future-proof web development</p>
+			</div>
 		</div>
 	</div>
+	<div class='row'>
+		<div class='col-lg-12'></div>
+	</div>
+	<div class='row'>
+		<div class='col-lg-12'>
+			<div class='idea'><i class='fa fa-flask'></i><div class='hexagon'></div></div>
+			<div class='design'><i class='fa fa-text-height'></i><div class='hexagon'></div></div>
+			<div class='development'><i class='fa fa-cubes'></i><div class='hexagon'></div></div>
+			<div class='deployment'><i class='fa fa-rocket'></i><div class='hexagon'></div></div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-lg-12'></div>
+	</div>
+	<div class='row'>
+		<div class='col-lg-12'></div>
+	</div>
+	<script>
+	$(document).ready(function(){
+		$(window).scroll(function () { 
+		   $('.background img').css({
+		      'top' : -($(this).scrollTop()/4)+"px"
+		   }); 
+		});
+	});
+	</script>
 </body>
 </html>
