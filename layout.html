@@ -14,6 +14,11 @@
 	<![endif]-->
 </head>
 <body>
+	<div class='background'>
+		<img src="media/backdrop.svg" alt="">
+		<img src="media/backdrop2.svg" alt="">
+		<img src="media/backdrop3.svg" alt="">
+	</div>
 	<section class="heading cf">
 		<div class="container">
 			<div class="row">
@@ -52,7 +57,7 @@
 				<div class="col-md-4 explanation">We meet with you online or in-person and work together to translate your idea into a prototype for the modern web.</div>
 			</div>
 			<div class="row design">
-				<div class="col-md-4 explanation">We design a clean, accessible user interface for your application and a cohesive visual style to fit your brand and provide an excellent user experience.</div>
+				<div class="col-md-4 explanation">We design a clean, accessible user interface for your application and a cohesive visual style to fit your brand.</div>
 				<div class="col-md-3 hexcontainer col-md-offset-3">
 					<div class="hexagon cf">
 						<span class="fa fa-text-height"></span>
@@ -142,5 +147,20 @@
 			<div class="col-md-2 hexcontainer email"><a href="#" class="hexagon cf"><span class="fa fa-envelope"></span></a></div>
 		</div>
 	</div>
+	<script>
+	$(document).ready(function(){
+		$(window).scroll(function () { 
+		   $('.background img:nth-child(1)').css({
+		      'top' : -($(this).scrollTop()/4)+"px"
+		   });
+		   $('.background img:nth-child(2)').css({
+		      'top' : -($(this).scrollTop()/2)+"px"
+		   }); 
+		   $('.background img:nth-child(3)').css({
+		      'top' : -($(this).scrollTop()/3)+"px"
+		   }); 
+		});
+	});
+	</script>
 </body>
 </html>

@@ -13,7 +13,16 @@
 
 /* GENERAL STYLING */
 body {
-  font-family: "Roboto", "Helvetica Neue", sans-serif; }
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  background-color: #FAFAFA; }
+
+.background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 97vh;
+  z-index: -1; }
 
 .section-heading {
   text-align: center;
@@ -26,9 +35,8 @@ body {
   text-align: center;
   padding: 1em;
   margin: 2.5em auto;
-  width: 70%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #eee; }
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.08); }
   .logo h1 {
     font-weight: 100;
     font-size: 4.5em;
@@ -42,7 +50,6 @@ body {
     letter-spacing: 7px; }
 
 .heading {
-  background: url("../../media/backdrop.svg");
   padding-bottom: 2em; }
   .heading .cta {
     float: right;
