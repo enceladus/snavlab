@@ -4,55 +4,178 @@
 	<meta charset=utf-8 />
 	<title>Snavlab - fast &amp; future-proof web application development</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/master.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<!-- PALETTE
-		red: 218,40,56
-		white: 255,255,255
-		old grey pants: 153,140,133
-		blue: 4,166,188
-		brown: 209,188,170
-	-->
 </head>
 <body>
-	<div class='background'>
-		<img src='media/backdrop.svg'>
-		<img src='media/backdrop2.svg'>
-		<img src='media/backdrop3.svg'>
+	<div class="background">
+		<img src="media/backdrop.svg" alt="">
+		<img src="media/backdrop2.svg" alt="">
+		<img src="media/backdrop3.svg" alt="">
 	</div>
-	<div class='row'>
-		<div class='col-lg-12'>
-			<div class="logo">
-				<img src="media/logo.svg">
-				<p>snavlab</p>
-				<p class='tagline'>fast &amp; future-proof web development</p>
+	<section class="heading cf">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="logo">
+						<img src="media/logo.svg">
+						<h1>snavlab</h1>
+						<h2 class="tagline">fast &amp; future-proof web app development</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cta">
+			<div class="infobox">
+				<p>We are a team of experienced designers and developers eager to work with entrepreneurs with big plans. Our specialty is turning ideas into marketable products by handling the entire chain of execution, from prototype to deployment.</p>
+			</div>
+			<div class="free-quote">
+				<a href="#">Free quote &amp; consultation &rarr;</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="process">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-heading">Our Process</h2>
+					<div class="col-md-6 col-md-offset-3 about"><p>We believe in agile, test-driven development. Using libraries only as-needed in combination with MV* paradigms and a RESTful API-backbone, our apps are fast, feature-extensible, &amp; scalable.</p></div>
+				</div>
+			</div>
+			<div class='hexandtext'>
+				<div class="row idea">
+					<div class="col-xs-2 hexcontainer col-xs-offset-6 wow slideInRight">
+						<div class="hexagon cf">
+							<span class="fa fa-flask"></span>
+						</div>
+					</div>
+					<div class="col-xs-4 explanation wow slideInRight"><h1>IDEA</h1>
+					<p>We meet with you online or in-person and work together to translate your idea into a prototype for the modern web.</p></div>
+				</div>
+				<div class="row design">
+					<div class="col-xs-5 explanation wow slideInLeft"><h1>DESIGN</h1>
+					<p>We design a clean, accessible user interface for your application and a cohesive visual style to fit your brand.</p></div>
+					<div class="col-xs-3 hexcontainer wow slideInLeft">
+						<div class="hexagon cf">
+							<span class="fa fa-text-height"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row development">
+					<div class="col-xs-2 hexcontainer col-xs-offset-6 wow slideInRight">
+						<div class="hexagon cf">
+							<span class="fa fa-cubes"></span>
+						</div>
+					</div>
+					<div class="col-xs-4 explanation wow slideInRight"><h1>DEVELOPMENT</h1>
+					<p>Using up-to-date web paradigms, we build a scalable back-end to handle all your application's needs. We build all our applications to be extendible to iOS or Android with ease.</p></div>
+				</div>
+				<div class="row deployment">
+					<div class="col-xs-5 explanation wow slideInLeft"><h1>DEPLOYMENT</h1>
+					<p>We test and deploy your app using industry-standard technology, providing you with a 99.9% uptime guarantee and top-of-the-line usage analytics to help you make better decisions. We also provide SEO consultation &amp; setup to get your website noticed.</p></div>
+					<div class="col-xs-3 hexcontainer wow slideInLeft">
+						<div class="hexagon cf">
+							<span class="fa fa-rocket"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-heading">Our Work</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="https://zenvoice.co" target="_blank"><img class='portfolio' src="media/zenvoice.png" alt="Zenvoice"></a>
+					<h2 class="work-title">Zenvoice</h2>
+					<p class="description">A perfect example of a market-ready MVP built from scratch in less than 100 hours. <br><strong>Role:</strong> founder, design &amp; development</p>
+					<a href="https://www.zenvoice.co" target="_blank" class="btn btn-primary">Visit site</a>
+				</div>
+				<div class="col-md-6">
+					<a href="https://www.twitgift.me/?page_id=201" target="_blank"><img class='portfolio' src="media/twitgift.png" alt="TwitGift"></a>
+					<h2 class="work-title">Twitgift</h2>
+					<p class="description">Artisinal gift distribution via Twitter. <br><strong>Role:</strong> back-end systems architecture</p>
+					<a href="https://www.twitgift.me/?page_id=201" target="_blank" class="btn btn-primary">Visit site</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<a href="http://soi-mini-awards.com" target="_blank"><img class='portfolio' src="media/nasa.png" alt="NASA Summer of Innovation"></a>
+					<h2 class="work-title">NASA SOI Awards</h2>
+					<p class="description">Grant application website for NASA. <br><strong>Role:</strong> design &amp; development</p>
+					<a href="http://soi-mini-awards.com" target="_blank" class="btn btn-primary">Visit site</a>
+				</div>
+				<div class="col-md-6">
+					<a href="http://tagaboom.com" target="_blank"><img class='portfolio' src="media/tagaboom.png" alt="TagABoom"></a>
+					<h2 class="work-title">TagaBoom</h2>
+					<p class="description">A web &amp; mobile-app that allows for collaborative annotations and editing of several types of documents. <br><strong>Role: </strong> design &amp; development</p>
+					<a href="http://tagaboom.com" target="_blank" class="btn btn-primary">Visit site</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="container about">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="section-heading">Founders</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 team">
+				<div class="col-md-6">
+					<img src="media/ian.jpg" alt="">
+					<h2>Ian Seyer</h2>
+					<h3>Technical Lead</h3>
+					<p class="description">Ian has been making websites for 8 years, with a combination of freelance &amp; firm-based design and development experience. Since receiving a formal education in computer science (Java), he has switched over to Python as his preferred language, using Flask for web applications. Designs the stack, API, and logic at Snavlab.</p>
+					<a target="_blank" class="btn btn-primary" href="http://www.ianseyer.com">Website</a>
+				</div>
+				<div class="col-md-6">
+					<img src="media/steven.jpeg" alt="">
+					<h2>Delwin Campbell</h2>
+					<h3>Creative Director</h3>
+					<p class="description">Delwin has been making websites for 7 years, and currently specializes in front-end web application design and development using JavaScript frameworks such as AngularJS. He coordinates design and front-end development efforts at Snavlab.</p>
+					<a target="_blank" class="btn btn-primary" href="http://www.delw.in">Website</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class='row'>
-		<div class='col-lg-12'></div>
-	</div>
-	<div class='row'>
-		<div class='col-lg-12'>
-			<div class='idea'><i class='fa fa-flask'></i><div class='hexagon'></div></div>
-			<div class='design'><i class='fa fa-text-height'></i><div class='hexagon'></div></div>
-			<div class='development'><i class='fa fa-cubes'></i><div class='hexagon'></div></div>
-			<div class='deployment'><i class='fa fa-rocket'></i><div class='hexagon'></div></div>
+
+	<section class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-heading">Get in Touch</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5 col-md-offset-3 info">
+					<p><strong>We are currently available for work.</strong></p>
+					<p><a href="mailto:hey@snavlab.com">Get in touch via email</a> for a free quote and consultation if you think your project is a good fit for us.</p>
+				</div>
+				<div class="col-md-2 hexcontainer email"><a href="mailto:hey@snavlab.com" class="hexagon cf"><span class="fa fa-envelope"></span></a></div>
+			</div>
 		</div>
-	</div>
-	<div class='row'>
-		<div class='col-lg-12'></div>
-	</div>
-	<div class='row'>
-		<div class='col-lg-12'></div>
-	</div>
+	</section>
+
 	<script>
 	$(document).ready(function(){
+		new WOW().init();
 		$(window).scroll(function () { 
 		   $('.background img:nth-child(1)').css({
 		      'top' : -($(this).scrollTop()/4)+"px"
